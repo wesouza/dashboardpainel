@@ -88,13 +88,13 @@ export default function Unidade({ data }) {
     }
   }
 
-  const number = `${data.whatsapp}`;
-  const num = `(${number.substring(0, 2)}) ${number.substring(
-    2,
-    7
-  )} - ${number.substring(7, number.length)}`;
+  // const number = `${data.whatsapp}`;
+  // const num = `(${number.substring(0, 2)}) ${number.substring(
+  //   2,
+  //   7
+  // )} - ${number.substring(7, number.length)}`;
 
-  data.whatsapp = num;
+  // data.whatsapp = num;
 
   return (
     <>
