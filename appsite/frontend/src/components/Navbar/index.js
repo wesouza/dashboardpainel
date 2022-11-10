@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 
@@ -9,7 +10,7 @@ export default function Navbar() {
           <div className="w-auto">
             <div className="flex flex-wrap items-center">
               <div className="w-auto mr-14">
-                <a href="#">
+                <a href="/">
                   <img
                     src="https://static.shuffle.dev/uploads/files/9e/9e1512affcd1aa82f62c6251243af0e354d78e35/logovox2you-1.png"
                     alt=""

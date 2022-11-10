@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import Script from "next/script";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -32,12 +31,12 @@ class MyDocument extends Document {
           />
 
           <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-          <script src="js/main.js" />
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
+        <script type="text/javascript" src="../js/main.js" />
       </Html>
     );
   }

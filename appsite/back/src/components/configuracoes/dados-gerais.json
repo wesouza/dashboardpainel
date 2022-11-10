@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_configuracoes_dados_gerais",
+  "info": {
+    "displayName": "Dados gerais",
+    "icon": "cog",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Unidades": {
+      "type": "string"
+    },
+    "Alunos": {
+      "type": "string"
+    },
+    "Tecnicas": {
+      "type": "string"
+    },
+    "Dinamicas": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "kind": "collectionType",
+  "collectionName": "unidades",
+  "info": {
+    "singularName": "unidade",
+    "pluralName": "unidades",
+    "displayName": "Unidade",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "cidade": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cidade.cidade"
+    },
+    "estado": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::estado.estado",
+      "inversedBy": "unidade"
+    },
+    "Endereco": {
+      "type": "string"
+    },
+    "Numero": {
+      "type": "string"
+    },
+    "Bairro": {
+      "type": "string"
+    },
+    "CEP": {
+      "type": "string"
+    },
+    "WhatsApp": {
+      "type": "string"
+    },
+    "Telefone": {
+      "type": "string"
+    },
+    "Fotos": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "Codigos": {
+      "type": "component",
+      "repeatable": false,
+      "component": "codigos.codigos"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "SEO_titulo": {
+      "type": "string"
+    },
+    "SEO_descricao": {
+      "type": "text"
+    },
+    "capa": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

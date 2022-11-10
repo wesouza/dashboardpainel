@@ -1,6 +1,9 @@
 import { DefaultSeo } from "next-seo";
 import SEO from "../../next-seo-config";
 
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
+
 import "../../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
@@ -9,6 +12,7 @@ function MyApp({ Component, pageProps }) {
       <DefaultSeo {...SEO} />
 
       <Component {...pageProps} />
+      <ToastContainer />
     </>
   );
 }
